@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="detail.css"/>
+<link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/basestyles.css'%}"/>
+<link href="https://fonts.googleapis.com/css?family=Comfortaa|Source+Code+Pro:400,600,700&display=swap" rel="stylesheet">
+{% block extrahead %}{% endblock %}
+{% block extrahead2 %}{% endblock %}
+{% block extrahead3 %}{% endblock %}
+</head>
+<body>
+
+<header class="header"> 
+
+<div class="recordlogo"> </div>
+
+<div class="textlogo"> </div>
+
+<div class="icons">
+<img class="searchicon" src="{% static 'mainapp/images/searchicon123.png'%}">
+<img class="carticon" src="{% static 'mainapp/images/anothercart.png'%}">
+<div class="contextprocessordiv">
+{% with total_items=cart|length %}
+    {% if cart|length > 0 %}
+           ({{ total_items }})
+        
+    {% else %}
+       (O)
+    {% endif %}
+{% endwith %} 
+
+</div>
+</div>
+
+</header>
+
+
+
+
+
+
+{% block content %}
+{% endblock %}
+
+{% block search %}
+{% endblock %}
+
+{% block detail %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+<div class="footeroutsidediv"> 
+<div class="logodiv">
+</div>
+
+<div class="footerdiv">
+About FAQ Contact
+</div>
+
+</div>
+</footer>
+
+</body>
+</html>

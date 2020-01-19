@@ -1,0 +1,73 @@
+{% extends 'mainapp/base_search.html' %}
+
+{% load static %}
+
+{% block extrahead2 %}
+<link rel="stylesheet" href="{% static "mainapp/css/recordstyles.css" %}">
+{% endblock %}
+
+
+
+{% block search %}
+
+<div class="querydiv"> 
+Showing results for {{query}}:
+
+</div>
+
+
+<div class="backgrounddiv"> 
+
+{% for record in results %}
+
+<div class="outerdiv1">
+
+
+
+<img class="vinyl1" src="{% static 'mainapp/images/vinylrewhite.png'%}">
+
+<img class="cover1" src="{% if record.coverimage %} {{ record.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}">
+
+<div class="titlediv1">
+<div class="recordartist1"> 
+{{record.artist.name}}
+</div>
+<div class="recordtitle1">
+{{record.title}}
+
+
+</div>
+
+
+<div class="recordlabeletc1">
+{{record.label.name}}
+<br>
+
+{{record.unit}}{{record.recordformat}}
+<br>
+{{record.price}}
+</div>
+</div>
+</div>
+
+
+
+{% endfor %}  
+
+
+   
+
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+

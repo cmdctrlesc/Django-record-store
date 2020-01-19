@@ -1,0 +1,122 @@
+.searchdiv {
+    position: relative;
+    margin-left:0px;
+    margin-right:0px;
+    height:400px;
+    background-image: url("../images/sky.jpg");
+    background-size:cover; 
+    border-bottom: 2px solid black;
+    border-width: 3px;
+
+}
+
+.backdiv {
+    position: absolute;
+    margin-left:0px;
+    margin-right: 0px;
+    height:110px;
+    background-color:black;
+    background-size:cover;
+    width:1280px;
+    margin-top:148px;
+
+
+
+
+}
+
+
+.input {
+    position:absolute;
+    width:1100px;
+    height:80px;
+    margin-top:130px;
+    margin-left:90px;
+    /* border: 2px solid black;
+    border-width: 3px; */
+    opacity:0.6;
+    font-size:25px;
+    font-family: 'Source Code Pro', monospace;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+    
+
+}
+
+
+
+.albumsearch {
+
+    margin-left:90px;
+
+
+}
+
+.artistsearch {
+    margin-left:360px;
+
+}
+
+
+.labelsearch {
+    margin-left:640px;
+
+ 
+
+}
+
+
+.descriptionsearch {
+    margin-left:910px;
+
+}
+
+
+.albumsearch, .artistsearch, .labelsearch, .descriptionsearch {
+    border: 2px solid white;
+    border-width: 3px;
+    background-color:black;
+    position:absolute;
+    height:50px;
+    width:280px;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:0px;
+    padding-right: 0;
+    margin-top:220px;
+
+}
+
+
+.albumbtn, .artistbtn, .labelbtn, .descriptionbtn {
+    height:49px;
+    width:270px;
+    background-color:black;
+    outline:none;
+    border:none;
+    font-family: 'Source Code Pro', monospace;
+    font-size:20px;
+    font-weight:700px;
+    color:white;
+}
+
+
+
+
+/* .querydiv { */
+    /* background-color:black;
+    color:white;
+    margin-right:0px;
+    margin-left:0px;
+    padding-right:0px;
+    padding-left:0px;
+    height:40px;
+    font-size:25px;
+    padding:10px;
+    padding-left:90px;
+    padding-top:20px; */
+    /* border: 2px solid black;
+    border-width: 5px; */
+    /* font-family: 'Source Code Pro', monospace;
+
+} */

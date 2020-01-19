@@ -1,0 +1,335 @@
+.contentdiv {
+    margin-left:0px;
+    margin-right:0px;
+    height:270px;
+    padding-top:50px;
+    background-image:url("../images/sky.jpg");
+    background-size:cover;
+    padding-left:0px;
+}
+
+
+
+
+.vinyl {
+    width:200px;
+    height:200px;
+    position:absolute;
+    margin-top:20px;
+    margin-left:90px;
+    z-index:5;
+    
+    
+
+} 
+
+
+
+.cover {
+    width:200px;
+    height:200px;
+    position:absolute;
+    margin-left:90px;
+    margin-top:80px;
+    border: 2px solid black;
+    border-width: 3px;
+    z-index:2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index:6;
+
+}
+
+.maintitlediv {
+    position: absolute;
+    width:300px;
+    height:250px;
+    background-color:black;
+    border: 2px solid black;
+    border-width: 2px;
+    margin-left:0px;
+    margin-top:80px;
+    width:780px;
+    font-size:25px;
+    color:white;
+    padding-left:500px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+
+
+
+}
+
+
+.recordtitle {
+    font-size:35px;
+    margin-top:20px;
+    font-weight:600;
+    font-family: 'Source Code Pro', monospace;
+    background: black;
+    text-shadow: 2px 1px 0 #7A7A7A;
+    	
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+.moreinfodiv {
+    position:relative;
+    margin-left:0px;
+    padding-left:0px;
+    width:1100px;
+    height:500px;
+    padding-left:90px;
+    padding-right:90px;
+    padding-top:20px;
+    margin-right:20px;
+    background-image: url("../images/sky\ 2.jpg");
+    background-size:cover;
+    
+
+}
+
+.addtocart {
+    position:absolute;
+    background-color:white;
+    margin-left: 0px;
+    width:160px;
+    height:30px;
+    margin-top:300px;
+    border: 2px solid black;
+    border-width: 3px;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Comfortaa', cursive; */
+    font-weight: 700;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:40px;
+
+}
+
+.basicinfotitle {
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+}
+
+
+.basicinfodiv {
+    position:absolute;
+
+    height:350px;
+    width:375px;
+    margin-top:100px;
+    font-size:20px;
+    font-family: 'Comfortaa';
+
+}
+
+
+.detailinfotitle {
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+
+}
+
+
+.detailinfodiv {
+
+    width:700px;
+    margin-left:400px;
+    margin-top:100px;
+    font-size:25px;
+    font-family: 'Comfortaa';
+
+ 
+    
+
+}
+
+
+.videodiv {
+    background-color:black;
+    margin-left:0px;
+    margin-right:0px;
+    height:400px;
+}
+
+
+.frame {
+    margin-left:90px;
+    margin-top:40px;
+    border: 2px solid black;
+    border-width: 3px;
+
+}
+
+
+
+
+
+.descriptiondiv {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    height:500px;
+    background-color:white;
+    position:relative;
+}
+
+
+
+.detaildescription {
+    position:absolute;
+    margin-left:90px;
+    margin-top:30px;
+    width:1100px;
+    height:500px;
+    font-size:20px;
+    font-family: 'Comfortaa';
+
+
+}
+
+
+.detailtitle {
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.morefromartisttitle {
+    margin-left:0px;
+    margin-right:0px;
+    height:60px;
+    background-color:black;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+    padding-left:90px;
+    padding-top:20px;
+}
+
+
+.morefromartistdiv {
+    margin-left:0px;
+    margin-right:0px;
+    height:800px;
+    background-image:url("../images/unnamed.jpg");
+    background-size:cover;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vinyl1 {
+    width:200px;
+    height:200px;
+    position:absolute;
+    margin-top:20px;
+    margin-left:90px;
+    z-index: 4;
+    
+    
+
+}
+
+
+
+.cover1 {
+    width:200px;
+    height:200px;
+    position:absolute;
+    margin-left:90px;
+    margin-top:80px;
+    border: 2px solid black;
+    border-width: 3px;
+    z-index: 5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.titlediv1 {
+    position: absolute;
+    width:800px;
+    height:190px;
+    background-color:white;
+    border: 2px solid black;
+    border-width: 3px;
+    margin-left:120px;
+    margin-top:70px;
+    font-size:35px;
+    font-family: 'Source Code Pro', monospace;
+    z-index: 3;
+    padding-left:250px;
+    padding-top:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+.recordartist1 {
+    font-weight: 600;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
+
+}
+
+
+.recordtitle1 {
+    font-size:30px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    font-weight: 600;
+
+}
+
+
+
+.recordlabeletc1 {
+    margin-top:20px;
+    font-size:20px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+

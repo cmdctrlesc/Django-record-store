@@ -1,0 +1,165 @@
+
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+
+{% block extrahead3 %}
+<link rel="stylesheet" href="{% static "mainapp/css/detailstyles.css" %}">
+{% endblock %}
+
+{% block detail %}
+
+
+<div class="contentdiv">
+
+<img class="vinyl1" src="{% static 'mainapp/images/record.png'%}">
+<img class="cover1" src="{% if record.coverimage %} {{ record.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}">
+
+
+<div class="maintitlediv">
+
+<div class="recordtitle"> 
+{{record.artist.name}}
+<br>
+{{record.title}}
+</div>
+<br>
+
+{{record.label.name}}
+
+</div>
+</div>
+
+
+
+<div class="moreinfodiv"> 
+
+<div class="addtocart">
+Add to cart
+</div>
+
+
+<div class="basicinfodiv"> 
+<div class="basicinfotitle">
+Item details:
+</div>
+<br>
+
+
+<br>
+Barcode: {{record.barcode}}
+<br>
+ID number: {{record.recordid}}
+<br>
+{{record.unit}}{{record.recordformat}}
+<br>
+{{record.price}}
+</div>
+
+<div class="detailinfodiv">
+<div class="detailinfotitle">
+Tracklist:
+</div>
+<br>
+
+
+A1	Song	
+<br>
+A2	Placeholder	
+<br>
+A3	Foo
+<br>
+A4	Bar
+<br>
+B1	Song	
+<br>
+B2	Lorem
+<br>	
+B3	Ipsum	
+<br>
+B4	Song
+<br>
+B5	Placeholder
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="videodiv"> 
+<iframe class="frame" frameBorder="0" width="470" height="315" src="{% if record.ytlink != "not found" %} {{ record.ytlink }} {% endif %}">
+</iframe>
+</div>
+
+<div class="descriptiondiv"> 
+<div class="detaildescription">
+<div class="detailtitle"> More info: </div>
+
+<br>
+
+{{record.wikiinfo}}
+
+{{record.wikilink}}
+
+<br>
+{{record.artist.wikiinfo}}
+{{record.artist.wikilink}}
+
+
+<br>
+{{record.label.wikiinfo}}
+{{record.label.wikilink}}
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div class="morefromartisttitle">
+More from artist:
+</div>
+
+<div class="morefromartistdiv"> 
+
+
+
+
+<img class="vinyl1" src="images/vinylrewhite.png">
+
+<img class="cover1" src="images/hauff.jpg">
+
+<div class="titlediv1">
+<div class="recordartist1"> 
+Laurel Halo
+</div>
+<div class="recordtitle1">
+Chance of rain
+
+
+</div>
+
+
+<div class="recordlabeletc1">
+Hyperdub
+<br>
+
+
+1LP
+<br>
+19.99
+</div>
+</div>
+</div>
+
+
+
