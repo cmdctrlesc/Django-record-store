@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from mainapp.models import Record
+from mainapp.models import Record, Artist, Label
 from cartapp.forms import CartAddProductForm
 from django.db.models import Q
 
@@ -7,7 +7,6 @@ from django.db.models import Q
 def mainview(request):
 
     allrecords = Record.objects.all()[0:10]
-    print(allrecords)
 
     return render(request, "mainapp/searchpage.html", {"allrecords": allrecords})
 
@@ -23,16 +22,13 @@ def product_detail(request, slug):
     context = {'record': record,
                'cart_product_form': cart_product_form, 'products_from_artist': products_from_artist, 'products_from_label': products_from_label
                }
-    # for item in products_from_artist:
-    #     print(item.title + "1")
-    # for item in products_from_label:
-    #     print(item.title + "2")
     return render(request, 'mainapp/detail.html', context)
 
 
 def search(request):
     if request.method == "GET":
         query = request.GET.get('q')
+        print(query)
 
         if "searchtitle" in request.GET:
 
@@ -42,13 +38,19 @@ def search(request):
 
         elif "searchartist" in request.GET:
 
-            results = Record.objects.filter(Q(artist__name__icontains=query))
-            context = {'results': results, 'query': query}
+            artistresults = Artist.objects.filter(Q(name__icontains=query))
+
+            allrecords = Record.objects.all()
+
+            context = {'artistresults': artistresults,
+                       'query': query, 'allrecords': allrecords}
+
             return render(request, 'mainapp/artistsearch.html', context)
 
         elif "searchlabel" in request.GET:
-            results = Record.objects.filter(Q(label__name__icontains=query))
-            context = {'results': results, 'query': query}
+            labelresults = Label.objects.filter(Q(name__icontains=query))
+
+            context = {'labelresults': labelresults, 'query': query}
             return render(request, 'mainapp/labelsearch.html', context)
 
         elif "searchdescription" in request.GET:
