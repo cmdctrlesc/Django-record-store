@@ -20,20 +20,20 @@
 <div class="searchdiv"> 
 
 <form action="{% url 'mainapp:searchresults' %}" method="GET" >
-{% csrf_token %}
+
 
 <input type="text" name="q" action="/search/" class="input" placeholder="Search...">  </input>
+<div class="everythingsearch">
+<input value="...everything" type="submit" name="everything" class="btn1"></input>
+</div>
 <div class="albumsearch">
-<input value="...album titles" type="submit" name="searchtitle" class="albumbtn"></input>
+<input value="...album titles" type="submit" name="albumtitles"  class="btn2"</input>
 </div>
 <div class="artistsearch">
-<input value="...artist names" type="submit" name="searchartist"  class="artistbtn"</input>
+<input value="...artist names" type="submit" name="artistnames" class="btn3"> </input>
 </div>
-<div class="labelsearch">
-<input value="...record labels" type="submit" name="searchlabel" class="labelbtn"> </input>
-</div>
-<div class="descriptionsearch">
-<input value="...alldescriptions" type="submit" name="searchdescription" class="descriptionbtn"> </input>
+<div class="recordlabelsearch">
+<input value="...record labels" type="submit" name="recordlabels" class="btn4"> </input>
 </div>
 
 

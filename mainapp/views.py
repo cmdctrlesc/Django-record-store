@@ -2,6 +2,10 @@ from django.shortcuts import render, get_object_or_404
 from mainapp.models import Record, Artist, Label
 from cartapp.forms import CartAddProductForm
 from django.db.models import Q
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.urls import reverse
+from urllib.parse import urlencode
+from django.shortcuts import redirect
 
 
 def mainview(request):
@@ -26,39 +30,117 @@ def product_detail(request, slug):
 
 
 def search(request):
-    if request.method == "GET":
-        query = request.GET.get('q')
-        print(query)
 
-        if "searchtitle" in request.GET:
+    query = request.GET.get('q')
+    if "everything" in request.GET:
+        base_url = reverse('mainapp:everythingsearch')
+        query_string = urlencode({'query': query})
+        url = '{}?{}'.format(base_url, query_string)
+        return redirect(url)
 
-            results = Record.objects.filter(Q(title__icontains=query))
-            context = {'results': results, 'query': query}
-            return render(request, 'mainapp/titlesearch.html', context)
+    elif "albumtitles" in request.GET:
+        base_url = reverse('mainapp:albumsearch')
+        query_string = urlencode({'query': query})
+        url = '{}?{}'.format(base_url, query_string)
+        return redirect(url)
 
-        elif "searchartist" in request.GET:
+    if "artistnames" in request.GET:
+        base_url = reverse('mainapp:artistsearch')
+        query_string = urlencode({'query': query})
+        url = '{}?{}'.format(base_url, query_string)
+        return redirect(url)
 
-            artistresults = Artist.objects.filter(Q(name__icontains=query))
+    if "recordlabels" in request.GET:
+        base_url = reverse('mainapp:recordlabelsearch')
+        query_string = urlencode({'query': query})
+        url = '{}?{}'.format(base_url, query_string)
+        return redirect(url)
 
-            allrecords = Record.objects.all()
 
-            context = {'artistresults': artistresults,
-                       'query': query, 'allrecords': allrecords}
+def everythingsearch(request):
 
-            return render(request, 'mainapp/artistsearch.html', context)
+    query = request.GET.get('query')
+    qs = Record.objects.filter(Q(wikiinfo__icontains=query) | Q(
+        label__wikiinfo__icontains=query) | Q(artist__wikiinfo__icontains=query))
 
-        elif "searchlabel" in request.GET:
-            labelresults = Label.objects.filter(Q(name__icontains=query))
+    allresults = qs.order_by('pk')
 
-            context = {'labelresults': labelresults, 'query': query}
-            return render(request, 'mainapp/labelsearch.html', context)
+    paginator = Paginator(allresults, 10)
+    page = request.GET.get('page')
 
-        elif "searchdescription" in request.GET:
+    try:
+        results = paginator.page(page)
+    except PageNotAnInteger:
+        results = paginator.page(1)
+    except EmptyPage:
+        results = paginator.page(paginator.num_pages)
 
-            results = Record.objects.filter(Q(wikiinfo__icontains=query) | Q(
-                label__wikiinfo__icontains=query) | Q(artist__wikiinfo__icontains=query))
-            context = {'results': results, 'query': query}
+    context = {'results': results, 'query': query}
 
-            return render(request, 'mainapp/keywordsearch.html', context)
-    else:
-        pass
+    return render(request, 'mainapp/everythingsearch.html', context)
+
+
+def albumsearch(request):
+
+    query = request.GET.get('query')
+    qs = Record.objects.filter(Q(title__icontains=query))
+
+    allresults = qs.order_by('pk')
+
+    paginator = Paginator(allresults, 10)
+    page = request.GET.get('page')
+
+    try:
+        results = paginator.page(page)
+    except PageNotAnInteger:
+        results = paginator.page(1)
+    except EmptyPage:
+        results = paginator.page(paginator.num_pages)
+
+    context = {'results': results, 'query': query}
+
+    return render(request, 'mainapp/albumsearch.html', context)
+
+
+def artistsearch(request):
+
+    query = request.GET.get('query')
+    qs = Artist.objects.filter(Q(name__icontains=query))
+
+    allresults = qs.order_by('pk')
+
+    paginator = Paginator(allresults, 5)
+    page = request.GET.get('page')
+
+    try:
+        results = paginator.page(page)
+    except PageNotAnInteger:
+        results = paginator.page(1)
+    except EmptyPage:
+        results = paginator.page(paginator.num_pages)
+
+    context = {'results': results, 'query': query}
+
+    return render(request, 'mainapp/artistsearch.html', context)
+
+
+def recordlabelsearch(request):
+
+    query = request.GET.get('query')
+    qs = Label.objects.filter(Q(name__icontains=query))
+
+    allresults = qs.order_by('pk')
+
+    paginator = Paginator(allresults, 5)
+    page = request.GET.get('page')
+
+    try:
+        results = paginator.page(page)
+    except PageNotAnInteger:
+        results = paginator.page(1)
+    except EmptyPage:
+        results = paginator.page(paginator.num_pages)
+
+    context = {'results': results, 'query': query}
+
+    return render(request, 'mainapp/labelsearch.html', context)

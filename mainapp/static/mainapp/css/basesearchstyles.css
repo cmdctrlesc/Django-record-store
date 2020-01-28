@@ -45,20 +45,20 @@
 
 
 
-.albumsearch {
+.everythingsearch {
 
     margin-left:90px;
 
 
 }
 
-.artistsearch {
+.albumsearch {
     margin-left:360px;
 
 }
 
 
-.labelsearch {
+.artistsearch {
     margin-left:640px;
 
  
@@ -66,13 +66,13 @@
 }
 
 
-.descriptionsearch {
+.recordlabelsearch {
     margin-left:910px;
 
 }
 
 
-.albumsearch, .artistsearch, .labelsearch, .descriptionsearch {
+.everythingsearch, .albumsearch, .artistsearch, .recordlabelsearch {
     border: 2px solid white;
     border-width: 3px;
     background-color:black;
@@ -88,7 +88,7 @@
 }
 
 
-.albumbtn, .artistbtn, .labelbtn, .descriptionbtn {
+.btn1, .btn2, .btn3, .btn4 {
     height:49px;
     width:270px;
     background-color:black;

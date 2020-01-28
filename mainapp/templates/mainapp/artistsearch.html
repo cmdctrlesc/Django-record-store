@@ -18,9 +18,10 @@ Showing results for {{query}}:
 </div>
 
 
-{% for artist in artistresults %}
+{% for artist in results %}
+{% get_records_artist artist.name as records %}
 
-<div class="backgrounddiv"> 
+<div class="{% if records.count == 1 %} backgrounddiv {% elif records.count == 2 %} backgroundiv1 {% elif records.count == 3 %} backgrounddiv2 {% endif %}"> 
 
 <div class="generalartistdiv"> 
 
@@ -35,13 +36,12 @@ Showing results for {{query}}:
 
     <div class="allrecordsdiv">
     
-    {% get_records_artist artist.name as records %}
+    
     {% for record in records %}
+    
+
     <div class="innerrecordsdiv">
  
-  
-
-     
     <img class="vinyl" src="{% static 'mainapp/images/vinylrewhite.png'%}">
 
     <img class="cover" src="{% if record.coverimage %} {{ record.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}">
@@ -85,6 +85,22 @@ Showing results for {{query}}:
 </div>      
 
 {% endfor %} 
+
+{% if results.paginator.num_pages > 1 %}
+
+    <div class="paginator">
+        {% if results.has_previous %}
+            <a href="?page=1&query={{query}}">First</a>
+            <a href="?page={{ results.previous_page_number }}&query={{query}}">Previous</a>
+        {% endif %}
+        <span>{{ results.number }}</span><span>of</span> <span>{{ results.paginator.num_pages }}</span>
+        {% if results.has_next %}
+            <a href="?page={{ results.next_page_number }}&query={{query}}">Next</a>
+            <a href="?page={{ results.paginator.num_pages }}&query={{query}}">Last</a>
+        {% endif %}
+    </div>
+
+{% endif %}    
 
 {% endblock %}
 

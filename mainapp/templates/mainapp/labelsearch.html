@@ -18,7 +18,7 @@ Showing results for {{query}}:
 </div>
 
 
-{% for label in labelresults %}
+{% for label in results %}
 
 <div class="backgrounddiv"> 
 
@@ -85,6 +85,26 @@ Showing results for {{query}}:
 </div>      
 
 {% endfor %} 
+
+{% if results.paginator.num_pages > 1 %}
+
+    <div class="paginator">
+        {% if results.has_previous %}
+            <a href="?page=1&query={{query}}">First</a>
+            <a href="?page={{ results.previous_page_number }}&query={{query}}">Previous</a>
+        {% endif %}
+        <span>{{ results.number }}</span><span>of</span> <span>{{ results.paginator.num_pages }}</span>
+        {% if results.has_next %}
+            <a href="?page={{ results.next_page_number }}&query={{query}}">Next</a>
+            <a href="?page={{ results.paginator.num_pages }}&query={{query}}">Last</a>
+        {% endif %}
+    </div>
+
+{% endif %}    
+
+
+
+
 
 {% endblock %}
 
