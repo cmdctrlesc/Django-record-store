@@ -108,6 +108,7 @@ def artistsearch(request):
     qs = Artist.objects.filter(Q(name__icontains=query))
 
     allresults = qs.order_by('pk')
+    print(allresults)
 
     paginator = Paginator(allresults, 5)
     page = request.GET.get('page')
@@ -120,6 +121,7 @@ def artistsearch(request):
         results = paginator.page(paginator.num_pages)
 
     context = {'results': results, 'query': query}
+    print(context)
 
     return render(request, 'mainapp/artistsearch.html', context)
 

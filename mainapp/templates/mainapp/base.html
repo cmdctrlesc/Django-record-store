@@ -2,9 +2,6 @@
 {% load static %}
 <html>
 <head>
-<script type="text/javascript" src="mainapp/static/jquery-3.4.1.main.js.webarchive">
-</script> 
-<link rel="stylesheet" href="detail.css"/>
 <link rel="stylesheet" type="text/css" href="{% static 'mainapp/css/basestyles.css'%}"/>
 <link href="https://fonts.googleapis.com/css?family=Comfortaa|Source+Code+Pro:400,600,700&display=swap" rel="stylesheet">
 {% block extrahead %}{% endblock %}
@@ -16,13 +13,20 @@
 
 <header class="header"> 
 
-<div class="recordlogo"> </div>
+<div>
+<img class="textlogo" src="{% static 'mainapp/images/textlogo2.png' %}">
+</div>
+<div>
+<img class="cart" src="{% static 'mainapp/images/anothercart.png' %}">
+</div>
+<div>
+<img class="search" src="{% static 'mainapp/images/searchicon123.png' %}">
 
-<div class="textlogo"> </div>
+</div>
 
-<div class="icons">
-<img class="searchicon" src="{% static 'mainapp/images/searchicon123.png'%}">
-<img class="carticon" src="{% static 'mainapp/images/anothercart.png'%}">
+
+
+
 <div class="contextprocessordiv">
 {% with total_items=cart|length %}
     {% if cart|length > 0 %}
@@ -34,7 +38,8 @@
 {% endwith %} 
 
 </div>
-</div>
+
+
 
 </header>
 
@@ -63,17 +68,15 @@
 
 
 
-<footer class="footer">
-<div class="footeroutsidediv"> 
-<div class="logodiv">
+<div class="footer">
+<div>
+
+<img class="bottomlogo" src="{% static 'mainapp/images/logo.png' %}">
+</div>
 </div>
 
-<div class="footerdiv">
-About FAQ Contact
-</div>
 
-</div>
-</footer>
+</body>
 
 </body>
 </html>

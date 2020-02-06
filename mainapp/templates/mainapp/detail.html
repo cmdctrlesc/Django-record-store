@@ -106,13 +106,14 @@ B5	Placeholder
 {{record.wikilink}}
 
 <br>
-{{record.artist.wikiinfo}}
-{{record.artist.wikilink}}
+{% comment %} {{record.artist.wikiinfo}}
+{{record.artist.wikilink}} {% endcomment %}
 
 
 <br>
-{{record.label.wikiinfo}}
-{{record.label.wikilink}}
+{% comment %} {{record.label.wikiinfo}} {% endcomment %}
+{% comment %} {{record.label.wikilink}} {% endcomment %}
+
 
 
 
@@ -160,6 +161,9 @@ Hyperdub
 </div>
 </div>
 </div>
+
+
+{% endblock %}
 
 
 

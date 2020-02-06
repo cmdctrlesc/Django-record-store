@@ -19,22 +19,24 @@
 
 <div class="searchdiv"> 
 
+
 <form action="{% url 'mainapp:searchresults' %}" method="GET" >
 
 
 <input type="text" name="q" action="/search/" class="input" placeholder="Search...">  </input>
-<div class="everythingsearch">
-<input value="...everything" type="submit" name="everything" class="btn1"></input>
+<div class="everythingdiv">
+<input value="everything" type="submit" name="everything" class="btn1"></input>
 </div>
-<div class="albumsearch">
-<input value="...album titles" type="submit" name="albumtitles"  class="btn2"</input>
+<div class="titlesdiv">
+<input value="album titles" type="submit" name="albumtitles"  class="btn2"</input>
 </div>
-<div class="artistsearch">
-<input value="...artist names" type="submit" name="artistnames" class="btn3"> </input>
+<div class="artistdiv">
+<input value="artist names" type="submit" name="artistnames" class="btn3"> </input>
 </div>
-<div class="recordlabelsearch">
-<input value="...record labels" type="submit" name="recordlabels" class="btn4"> </input>
+<div class="labeldiv">
+<input value="record labels" type="submit" name="recordlabels" class="btn4"> </input>
 </div>
+
 
 
 </div>

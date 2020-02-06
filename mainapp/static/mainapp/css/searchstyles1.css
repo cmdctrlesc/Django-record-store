@@ -1,7 +1,7 @@
 
 .titlequerydiv {
-    background-color:black;
-    color:white;
+    background-color:white;
+    color:black;
     margin-right:0px;
     margin-left:0px;
     padding-right:0px;
@@ -14,6 +14,8 @@
     /* border: 2px solid black;
     border-width: 5px; */
     font-family: 'Source Code Pro', monospace;
+
+
 
 }
 
@@ -101,6 +103,7 @@
     font-weight: 600;
     text-shadow: 2px 1px 0 #7A7A7A;
     color:white;
+    
 }
 
 

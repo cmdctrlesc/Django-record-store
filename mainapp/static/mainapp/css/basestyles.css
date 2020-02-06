@@ -7,162 +7,84 @@ html {
 
 
 body {
-    margin:0;
     padding:0;
-    background-image:url("../images/sky.jpg");
-    background-size:contain;
-    padding-bottom:50px;
-
-   
-
+    margin:0;
+    background-color:black;
 
 }
-
-
 
 
 .header {
-    background-color:black;
-    position:relative;
-    height:110px;
-    margin-left:0px;
-    padding-left:0px;
+    padding-left:0%;
+    padding-right:0%;
+    margin-left:0%;
+    margin-right:0%;
+    width:100%;
+    height:50px;
+    background-color: black;
 
 }
-
-
-.recordlogo {
-    position:absolute;
-    background-image:url("../images/recordlogo.png");
-    background-size:contain;
-    width:90px;
-    height:70px;
-}
-
 
 .textlogo {
-    position:absolute;
-    width:90px;
+
+    position: absolute;
+    background-size:cover;
+    margin-left:10px;
+    height:40px;
+    width:120px;
+    margin-top:10px;
+
+}
+
+
+
+.cart {
     height:30px;
-    background-image:url("../images/textlogo2.png");
-    background-size: contain;
-    background-repeat:no-repeat ;
-    margin-top:75px;
-    
-
-}
-
-
-
-.icons {
-    position:absolute;
-    background-color:white;
-    height: 27px;
-    width:1190px;
-    margin-top:70px;
-    margin-left:90px;
-    padding-bottom:10px;
-    /* border-bottom: 2px solid black;
-    border-width: 3px; */
-}
-
-
-
-
-.searchicon {
-    position:absolute;
-    width:17px;
-    height:17px;
-    margin-left:1110px;
-    margin-top:12px;
-    margin-bottom:10px;
-}
-
-.carticon {
-    margin-top:8px;
-    position:absolute;
     width:35px;
-    height:25px;
-    margin-left:1130px;
-    margin-bottom:60px;
-    padding:0px 0px 0px 0px;
-    margin-right: 20px;
-
-}
-
-
-.contextprocessordiv {
     position:absolute;
-    height:20px;
-    width:20px;
-    margin-left:50px;
-    margin-left:1160px;
-    margin-top:15px;
-    font-size:10px;
-    font-family: 'Source Code Pro', monospace;
-    color:black;
+    margin-top:13px;
+    margin-left:95%;
+
 }
+
+
+
+
+
+.search {
+    height:19px;
+    width:18px;
+    position:absolute;
+    margin-top:19px;
+    margin-left:93%;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 110px;
+    height:100px;
     width: 100%;
-    overflow: hidden;
-}
-
-
-
-
-
-
-
-.footeroutsidediv {
-    position: relative;
-    margin-left:0px;
-    margin-right:0px;
-    height:110px;
-    margin-top:20px;
     margin-bottom:0px;
-    padding-bottom:0px;
     background-color:black;
-    color:white;
-    border-top: 2px solid black;
-    border-width: 3px; 
-
 
 }
 
 
 
-.logodiv {
-    position: absolute;
-    margin-bottom:0px;
-    margin-right:0px;
-    height:25px;
-    width:1280px;
-    background-color:black;
-    padding-bottom:0px;
-    background-image: url("../images/whitelogo.png");
-    background-size:contain;
-
-}
-
-
-
-
-
-.footerdiv {
+.bottomlogo {
+    height:60px;
+    width:60px;
     position:absolute;
-    margin-left:90px;
-    margin-right:90px;
-    height:30px;
-    width:1090px;
-    margin-top:50px;
-    margin-bottom:0px;
-    text-align:center;
-    font-family: 'Source Code Pro', monospace;
-    
+    margin-left:20px;
+    margin-top:20px;
 }
