@@ -1,66 +1,103 @@
-{% comment %} {% extends 'mainapp/base.html' %} {% endcomment %}
+{% extends 'mainapp/base.html' %}
 {% load static %}
-{% block title %}
-    Your Shopping Cart
+
+{% block extrahead5 %}
+<link rel="stylesheet" href="{% static "cartapp/css/cartstyles.css" %}">
 {% endblock %}
 
-{% block content %}
+
+{% block cart %}
+
+
 <div>
 
 <div>
-Your shopping cart
+<div class="titlediv">
+Your shopping cart:
+</div>
+
+
+</div>
+
+
+</div class="recordsincart">
+
+{% for item in cart %}
+    {% with product=item.record  %}
+
+    <div class="innerrecordsincart">
+
+   
+
+
+
+    <img class="vinylrecord" src="{% static 'mainapp/images/vinylrewhite.png'%}">
+    <a href="{{ product.get_absolute_url }}">
+    <img src="{% if product.coverimage %} {{ product.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}" class="vinylcover">
+    </a>
+
+
+
+    <div class="maintitlediv">
+
+    <div class="recordtitle"> 
+    {{product.artist.name}}
+    <br>
+    {{product.title}}
+    </div>
+    <br>
+    
+  
+
+    {{ item.price }}
+    {{ item.total_price }}
+
+    </div>
+
+    <div class="removebtn">
+    <a href="{% url "cart:cart_remove" product.id %}">Remove</a>
+    </div>
+
+    </div>
+
+    <div>
+
+
+    {% endwith %}
+
+
+
+
+
+
+
+    
+{% endfor %}
+
+
+</div>
+
+
+
+
+<div class="checkoutdiv">
+
+
 {% with total_items=cart|length %}
     {% if cart|length > 0 %}
-        My Shopping Order:
+        My order total:
         <a href="{% url "cart:cart_detail" %}">
-            {{ total_items }} item {{ total_items|pluralize }}, Kshs. {{ cart.get_total_price }}
+            {{ total_items }} item {{ total_items|pluralize }}, total price: {{ cart.get_total_price }}
         </a>
     {% else %}
         Your cart is empty.
     {% endif %}
 {% endwith %}
-</div>
 
+<br>
 
-
-
-{% for item in cart %}
-    {% with product=item.record  %}
-        <div>
-
-        <a href="{{ product.get_absolute_url }}">
-            <img src="{% if record.coverimage %} {{ record.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}" alt="..." style="height: 130px; width: 130px">
-        </a>
-
-        {{ product.title }}
-
-        <form action="{% url "cart:cart_add" product.id %}" method="post">
-            {% csrf_token %}
-            {{ item.update_quantity_form.quantity }}
-            {{ item.update_quantity_form.update }}
-            <input type="submit" value="Update">
-        </form>
-
-        <a href="{% url "cart:cart_remove" product.id %}">Remove</a>
-
-        kshs. {{ item.price }}
-        kshs. {{ item.total_price }}
-
-        </div> 
-
-    {% endwith %}
-   
-{% endfor %}
-
-  <b>Total</b>
-
-<b>{{ cart.get_total_price }}</b>
-
-
-<a href="{% url "mainapp:mainview" %}">Continue Shopping</a> 
 <a href=" " >Checkout</a>
 
-</div>
 </div>
 
 
@@ -68,3 +105,5 @@ Your shopping cart
 
 
 {% endblock %}
+
+

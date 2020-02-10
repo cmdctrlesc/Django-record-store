@@ -3,7 +3,8 @@
     margin-right:0px;
     height:270px;
     padding-top:50px;
-    background-image:url("../images/sky.jpg");
+    background-image:url("../images/free4.jpg");
+    /* background-color:white; */
     background-size:cover;
     padding-left:0px;
 }
@@ -11,11 +12,11 @@
 
 
 
-.vinyl {
+.vinylrecord {
     width:200px;
     height:200px;
     position:absolute;
-    margin-top:20px;
+    margin-top:30px;
     margin-left:90px;
     z-index:5;
     
@@ -25,7 +26,7 @@
 
 
 
-.cover {
+.vinylcover {
     width:200px;
     height:200px;
     position:absolute;
@@ -94,8 +95,14 @@
     padding-right:90px;
     padding-top:20px;
     margin-right:20px;
-    background-image: url("../images/sky\ 2.jpg");
+    /* background-image: url("../images/free\ \ copy.jpg"); */
+    /* background-color:rgb(135, 163, 153); */
+    background-color:rgb(212, 212, 212);
+    /* background-color:white; */
     background-size:cover;
+    z-index:2;
+    
+
     
 
 }
@@ -104,8 +111,8 @@
     position:absolute;
     background-color:white;
     margin-left: 0px;
-    width:160px;
-    height:30px;
+    width:200px;
+    height:50px;
     margin-top:300px;
     border: 2px solid black;
     border-width: 3px;
@@ -113,9 +120,27 @@
     /* font-family: 'Comfortaa', cursive; */
     font-weight: 700;
     font-size:20px;
-    padding-top:10px;
+    /* padding-top:10px;
     padding-bottom:10px;
-    padding-left:40px;
+    padding-left:40px; */
+    box-shadow: 5px 5px black;
+    z-index:3;
+    /* background-color: rgb(194, 194, 194); */
+
+}
+
+
+.btnadd {
+    height:50px;
+    width:170px;
+    background-color:white;
+    outline:none;
+    border:none;
+    font-family: 'Source Code Pro', monospace;
+    font-size:15px;
+    font-weight:700px;
+    z-index:4;
+
 
 }
 
@@ -165,14 +190,19 @@
     margin-left:0px;
     margin-right:0px;
     height:400px;
+
 }
 
 
 .frame {
     margin-left:90px;
     margin-top:40px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-width: 3px;
+    width:470px;
+    height:315px;
+    position:absolute;
+
 
 }
 
@@ -184,7 +214,7 @@
     margin-left:0px;
     margin-right:0px;
     margin-top:0px;
-    height:500px;
+    height:400px;
     background-color:white;
     position:relative;
 }
@@ -230,7 +260,7 @@
     font-family: 'Source Code Pro', monospace;
     font-size:25px;
     font-weight: 600;
-    padding-left:90px;
+    padding-left:450px;
     padding-top:20px;
 }
 
@@ -238,9 +268,20 @@
 .morefromartistdiv {
     margin-left:0px;
     margin-right:0px;
-    height:800px;
-    background-image:url("../images/unnamed.jpg");
+    height:auto;
+    background-image:url("../images/fat.jpg");
     background-size:cover;
+    position: relative;
+    padding-top:30px;
+    padding-bottom:150px;
+
+}
+
+.innerrecordsdiv {
+    position:relative;
+    height:300px;
+    width:1000px;
+ 
 
 }
 
@@ -262,7 +303,7 @@
 
 
 
-.vinyl1 {
+.vinyl {
     width:200px;
     height:200px;
     position:absolute;
@@ -276,7 +317,7 @@
 
 
 
-.cover1 {
+.cover {
     width:200px;
     height:200px;
     position:absolute;
@@ -290,7 +331,7 @@
 }
 
 
-.titlediv1 {
+.titlediv {
     position: absolute;
     width:800px;
     height:190px;
@@ -309,7 +350,7 @@
 }
 
 
-.recordartist1 {
+.recordartist {
     font-weight: 600;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
 
@@ -320,16 +361,89 @@
     font-size:30px;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     font-weight: 600;
+   
 
 }
 
 
 
-.recordlabeletc1 {
+.recordlabeletc {
     margin-top:20px;
     font-size:20px;
     font-family: 'Source Code Pro', monospace;
 
 }
+
+.morefromlabeltitle {
+    margin-left:0px;
+    margin-right:0px;
+    height:60px;
+    background-color:black;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+    padding-left:450px;
+    padding-top:20px;
+
+}
+
+
+
+.morefromlabeldiv {
+    margin-left:0px;
+    margin-right:0px;
+    height:auto;
+    background-image:url("../images/fat.jpg");
+    background-size:cover;
+    position: relative;
+    padding-top:30px;
+    padding-bottom:150px;
+
+}
+
+
+.seeallfromlabel {
+    margin-left:0px;
+    margin-right:0px;
+    height:40px;
+    background-color:white;
+    color:black;
+    font-family: 'Source Code Pro', monospace;
+    font-size:25px;
+    font-weight: 600;
+    padding-left:0px;
+    padding-bottom:30px;
+    padding-top:0px;
+    position: relative;
+
+
+}
+
+
+.seemore {
+    position:absolute;
+    background-color:rgb(212, 212, 212);
+    color:black;
+    margin-left: 500px;
+    width:150px;
+    height:30px;
+    margin-top:40px;
+    margin-bottom:200px;
+    border: 2px solid black;
+    border-width: 3px;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Comfortaa', cursive; */
+    font-weight: 700;
+    font-size:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:40px;
+    box-shadow: 5px 5px black;
+
+}
+
+
+
 
 

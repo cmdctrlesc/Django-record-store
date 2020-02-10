@@ -23,10 +23,12 @@
 <div class="upperdiv"> </div>
 
 
-<img class="vinyl" src="{% static 'mainapp/images/record
-.png'%}">
+<img class="vinyl" src="{% static 'mainapp/images/vinylrewhite.png'%}">
 
+
+<a href="{{ record.get_absolute_url }}">
 <img class="cover" src="{% if record.coverimage %} {{ record.coverimage.url }} {% else %} {% static 'mainapp/images/default.jpg' %} {% endif %}">
+</a>
 
 <div class="titlediv">
 <div class="artistnamediv">

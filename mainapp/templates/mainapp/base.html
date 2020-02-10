@@ -8,6 +8,7 @@
 {% block extrahead2 %}{% endblock %}
 {% block extrahead3 %}{% endblock %}
 {% block extrahead4 %}{% endblock %}
+{% block extrahead5 %}{% endblock %}
 </head>
 <body>
 
@@ -17,10 +18,14 @@
 <img class="textlogo" src="{% static 'mainapp/images/textlogo2.png' %}">
 </div>
 <div>
+<a href="{% url "cartapp:cart_detail" %}">
 <img class="cart" src="{% static 'mainapp/images/anothercart.png' %}">
+</a>
 </div>
 <div>
+<a href="{% url "mainapp:mainview" %}">
 <img class="search" src="{% static 'mainapp/images/searchicon123.png' %}">
+</a>
 
 </div>
 
@@ -55,6 +60,9 @@
 {% endblock %}
 
 {% block detail %}
+{% endblock %}
+
+{% block cart %}
 {% endblock %}
 
 

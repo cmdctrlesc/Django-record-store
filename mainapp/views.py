@@ -21,10 +21,13 @@ def product_detail(request, slug):
     artist = record.artist
     products_from_artist = Record.objects.filter(
         artist=artist).exclude(slug=slug)
+    products_from_artist1 = products_from_artist[0:3]
     label = record.label
     products_from_label = Record.objects.filter(label=label).exclude(slug=slug)
+    products_from_label1 = products_from_label[0:3]
+    print(products_from_label1, products_from_artist1)
     context = {'record': record,
-               'cart_product_form': cart_product_form, 'products_from_artist': products_from_artist, 'products_from_label': products_from_label
+               'cart_product_form': cart_product_form, 'products_from_artist': products_from_artist, 'products_from_artist1': products_from_artist1, 'products_from_label': products_from_label, 'products_from_label1': products_from_label1
                }
     return render(request, 'mainapp/detail.html', context)
 
@@ -121,7 +124,7 @@ def artistsearch(request):
         results = paginator.page(paginator.num_pages)
 
     context = {'results': results, 'query': query}
-    print(context)
+    # print(context)
 
     return render(request, 'mainapp/artistsearch.html', context)
 

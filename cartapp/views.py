@@ -10,6 +10,9 @@ def cart_add(request, record_id):
     cart = Cart(request)
     record = get_object_or_404(Record, id=record_id)
     form = CartAddProductForm(request.POST)
+    if request.method == "POST":
+        cart.add(record=record)
+
     if form.is_valid():
         cd = form.cleaned_data
         cart.add(record=record,

@@ -1,7 +1,7 @@
 
 .titlequerydiv {
-    background-color:white;
-    color:black;
+    /* background-color:white; */
+    color:white;
     margin-right:0px;
     margin-left:0px;
     padding-right:0px;
@@ -9,14 +9,19 @@
     height:40px;
     font-size:25px;
     padding:10px;
-    padding-left:90px;
+    padding-left:450px;
     padding-top:20px;
-    /* border: 2px solid black;
-    border-width: 5px; */
+    background-color:black;
+    border-top: 2px solid white;
+    border-width: 3px;
     font-family: 'Source Code Pro', monospace;
 
 
 
+}
+
+.backgrounddiv {
+    background-color:black;
 }
 
 
@@ -33,7 +38,7 @@
     margin-right:0px;
     border-radius:20;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Comfortaa';
     background-color:white;
     color:black;
     	
@@ -47,11 +52,15 @@
     margin-right:0px;
     height:120px;
     /* width: 100%; */
-    width:1000px;
+    width:990px;
     /* background-image: url("../images/sky\ 2.jpg"); */
     background-color:black;
     background-size:cover;
     padding-left:0px;
+    border-top: 2px solid white;
+    border-width: 3px;
+    border-right: 2px solid white;
+    border-width: 3px;
 }
 
 
@@ -128,6 +137,7 @@
     margin-top:20px;
     font-size:15px;
     color:black;
+    font-family: 'Comfortaa';
 }
 
 
@@ -135,14 +145,19 @@
     position:relative;
     margin-left:0px;
     margin-right:0px;
-    height:30px;
+    height:40px;
     width:100%;
     text-align:center;
     font-family: 'Source Code Pro', monospace;
-    padding-top:10px;
-    margin-bottom:40px;
-    background-image:url("../images/sky.jpg");
+    padding-top:30px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    /* background-image:url("../images/sky.jpg"); */
+    background-color:black;
+    color:white;
     background-size:cover;
+    border-bottom: 2px solid white;
+    border-width: 3px;
 
 
 
