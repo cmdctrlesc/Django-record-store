@@ -1,20 +1,17 @@
 
 .titlequerydiv {
-    /* background-color:white; */
-    color:white;
-    margin-right:0px;
-    margin-left:0px;
-    padding-right:0px;
-    padding-left:0px;
-    height:40px;
-    font-size:25px;
-    padding:10px;
-    padding-left:450px;
-    padding-top:20px;
-    background-color:black;
-    border-top: 2px solid white;
-    border-width: 3px;
+    background-color:white;
+    color:black;
+    margin-right:0;
+    margin-left:0;
+    height:2.5rem;
+    font-size:1.5625rem;
+    padding-left:15%;
+    padding-right:5%;
+    padding-bottom:0.3125rem;
+    padding-top:1.25rem;
     font-family: 'Source Code Pro', monospace;
+    font-weight: 800;
 
 
 
@@ -24,19 +21,34 @@
     background-color:black;
 }
 
+.upperdiv {
+    position:absolute;
+    margin-left:18.45rem;
+    margin-right:0;
+    height:7.5rem;
+    width:78%;
+    background-color:black;
+    padding-left:0px;
+    border-top: 0.125rem solid white;
+    border-width: 0.1875rem;
+    border-right: 0.125rem solid black;
+    border-width: 0.1875rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 
 
 
 .outsidediv {
     position: relative;
-    height:350px;
+    height:21.875rem;
     width:100%;
-    background-size:cover;
-    margin-top:40px;
-    margin-left:0px;
-    padding-left:0px;
-    margin-right:0px;
-    border-radius:20;
+    margin-top:3.125rem;
+    margin-left:0;
+    padding-left:0;
+    margin-right:0;
+    padding-right:0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: 'Comfortaa';
     background-color:white;
@@ -46,22 +58,6 @@
 
 }
 
-.upperdiv {
-    position:absolute;
-    margin-left:290px;
-    margin-right:0px;
-    height:120px;
-    /* width: 100%; */
-    width:990px;
-    /* background-image: url("../images/sky\ 2.jpg"); */
-    background-color:black;
-    background-size:cover;
-    padding-left:0px;
-    border-top: 2px solid white;
-    border-width: 3px;
-    border-right: 2px solid white;
-    border-width: 3px;
-}
 
 
 
@@ -69,11 +65,11 @@
 
 
 .vinyl {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-top:60px;
-    margin-left:90px;
+    margin-top:3.75rem;
+    margin-left:5.625rem;
     
     
 
@@ -82,26 +78,27 @@
 
 
 .cover {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-left:90px;
-    margin-top:120px;
-    border: 2px solid black;
-    border-width: 2px;
+    margin-left:5.625rem;
+    margin-top:7.5rem;
+    border: 0.1875rem solid black;
+    border-width: 0.1875rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
 
 .titlediv {
     position:absolute;
-    height:40px;
-    width:1000px;
-    margin-left:300px;
-    margin-top:30px;
-    font-size:35px;
+    height:2.5rem;
+    width:56.25rem;
+    margin-left:18.75rem;
+    margin-top:1.875rem;
+    font-size:2.1875rem;
+    padding-left:0.625rem;
     font-family: 'Source Code Pro', monospace;
-    color:white;
 
 
 
@@ -121,21 +118,22 @@
     font-weight: 600;
     text-shadow: 2px 1px 0 #7A7A7A;
     color:white;
-    font-size: 30px;
+    font-size: 1.875rem
 
 
 }
 
 .recordlabeldiv {
-    font-size:20px;
+    margin-top:1.25rem;
+    font-size:1.25rem;
     color:black;
 }
 
 
 
 .descriptionsdiv {
-    margin-top:20px;
-    font-size:15px;
+    margin-top:1.25rem;
+    font-size:0.9375rem;
     color:black;
     font-family: 'Comfortaa';
 }
@@ -145,19 +143,17 @@
     position:relative;
     margin-left:0px;
     margin-right:0px;
-    height:40px;
+    height:2.5rem;
     width:100%;
     text-align:center;
     font-family: 'Source Code Pro', monospace;
-    padding-top:30px;
-    padding-bottom:10px;
-    margin-bottom:10px;
-    /* background-image:url("../images/sky.jpg"); */
+    padding-top:1.25rem;
+    padding-bottom:0px;
     background-color:black;
     color:white;
     background-size:cover;
-    border-bottom: 2px solid white;
-    border-width: 3px;
+    border-bottom: 0.125rem solid white;
+    border-width: 0.1875rem;
 
 
 

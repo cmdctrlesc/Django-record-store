@@ -1,41 +1,47 @@
 
 .titlequerydiv {
-    background-color:black;
-    color:white;
-    margin-right:0px;
-    margin-left:0px;
-    padding-right:0px;
-    padding-left:0px;
-    height:40px;
-    font-size:25px;
-    /* padding:10px; */
-    padding-left:450px;
-    padding-top:20px;
-    padding-bottom:20px;
-    /* border-bottom: 2px solid white;
-    border-width: 3px; */
-    border-top: 2px solid white;
-    border-width: 3px;
+    background-color:white;
+    color:black;
+    margin-right:0;
+    margin-left:0;
+    height:2.5rem;
+    font-size:1.5625rem;
+    padding-left:15%;
+    padding-right:5%;
+    padding-bottom:0.3125rem;
+    padding-top:1.25rem;
     font-family: 'Source Code Pro', monospace;
-    /* background-image: url("../images/1234.png"); */
+    font-weight: 800;
 
+}
+
+
+.generalartistdiv {
+    position:relative;
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    height:6.375rem;
+    margin-top:3.125rem;
+    font-family: 'Source Code Pro', monospace;
+    background-color:white;
+    color:black;
+    border-bottom: 0.125rem solid black;
+    border-width: 0.1875rem;
+     
 }
 
 .backgrounddiv {
     position: relative;
     background-image: url("../images/fat.jpg");
-    background-color:rgb(135, 163, 153); 
     background-size:cover;
     margin-left:0%;
     margin-right:0%;
     height:auto;
     width:100%;
-    /* border-bottom: 2px solid black;
-    border-width: 3px; */
-    margin-bottom:0px;
-    padding-bottom:50px;
-    padding-top:60px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom:3.125rem;
+    padding-top:3.125rem;
+
 }
 
 
@@ -43,44 +49,18 @@
 
 
 
-.generalartistdiv {
-    position:relative;
-    /* background-color: white; */
-    margin-left:0%;
-    margin-right:0%;
-    width:100%;
-    height:20%;
-    margin-top:50px;
-    font-family: 'Source Code Pro', monospace;
-    padding:20px; 
-    padding-left:90px; 
-    background-color:white;
-    color:black;
-    border-bottom: 2px solid black;
-    border-width: 3px;
-     
-}
 
 
-/* .allrecordsdiv {
 
-    width:100px;
-    height:800px;
-    position:absolute;
-    margin-right:0%;
-    margin-left:0%;
-    width:100%;
-    margin-top:330px;
-    
-} */
 
 .innerrecordsdiv {
     position:relative;
-    height:300px;
-    width:1000px;
+    height:18.75rem;
+    width:100%;
+
  
 
-}
+} 
 
 
 
@@ -91,11 +71,11 @@
 
 
 .vinyl {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-top:20px;
-    margin-left:90px;
+    margin-top:1.25rem;
+    margin-left:5.625rem;
     z-index: 4;
     
     
@@ -105,13 +85,13 @@
 
 
 .cover {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-left:90px;
-    margin-top:80px;
-    border: 2px solid black;
-    border-width: 3px;
+    margin-left:5.625rem;
+    margin-top:5rem;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
     z-index: 5;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -120,22 +100,20 @@
 
 .titlediv {
     position: absolute;
-    width:750px;
-    height:190px;
+    width:50rem;
+    height:11.875rem;
     background-color:white;
-    border: 2px solid black;
-    border-width: 3px;
-    margin-left:120px;
-    margin-top:70px;
-    font-size:35px;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
+    margin-left:7.5rem;
+    margin-top:4.375rem;
+    font-size:1.5625rem;
     font-family: 'Source Code Pro', monospace;
     z-index: 3;
-    padding-left:250px;
-    padding-top:10px;
-    margin-bottom:50px;
+    padding-left:15.625rem;
+    padding-top:0.625rem;
+    margin-bottom:3.125rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* background-image: url("../images/sky\ 2.jpg");
-    background-size:cover; */
 
 
 
@@ -143,7 +121,7 @@
 
 
 .recordtitle {
-    font-size:30px;
+    font-size:1.5625rem;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     font-weight: 600;
 
@@ -163,8 +141,8 @@
 
 
 .recordlabeletc {
-    margin-top:20px;
-    font-size:20px;
+    margin-top:1.25rem;
+    font-size:1.25rem;
     font-family: 'Source Code Pro', monospace;
     position:absolute;
 
@@ -176,22 +154,20 @@
 
 
 .paginator {
-    position: relative;
+    position:relative;
     margin-left:0px;
     margin-right:0px;
-    height:30px;
+    height:2.5rem;
     width:100%;
     text-align:center;
     font-family: 'Source Code Pro', monospace;
-    padding-top:10px;
-    margin-bottom:40px;
-    /* background-image:url("../images/sky.jpg"); */
+    padding-top:1.25rem;
+    padding-bottom:0px;
     background-color:black;
     color:white;
     background-size:cover;
-    border-bottom: 2px solid white;
-    border-width: 3px;
-
+    border-bottom: 0.125rem solid white;
+    border-width: 0.1875rem;
 
 }
 

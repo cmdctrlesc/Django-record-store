@@ -25,7 +25,9 @@ def product_detail(request, slug):
     label = record.label
     products_from_label = Record.objects.filter(label=label).exclude(slug=slug)
     products_from_label1 = products_from_label[0:3]
-    print(products_from_label1, products_from_artist1)
+    request.session['artist'] = artist.name
+    request.session['label'] = label.name
+
     context = {'record': record,
                'cart_product_form': cart_product_form, 'products_from_artist': products_from_artist, 'products_from_artist1': products_from_artist1, 'products_from_label': products_from_label, 'products_from_label1': products_from_label1
                }
@@ -149,3 +151,19 @@ def recordlabelsearch(request):
     context = {'results': results, 'query': query}
 
     return render(request, 'mainapp/labelsearch.html', context)
+
+
+def seeallfromartist(request):
+
+    artist = request.session['artist']
+    allfromartist = Record.objects.filter(artist=artist)
+
+    return render(request, 'mainapp/seeall.html', {'allfromartist': queryset, 'title': artist})
+
+
+def seeallfromlabel(request):
+
+    label = request.session['label']
+    allfromlabel = Record.objects.filter(label__name=label)
+
+    return render(request, 'mainapp/seeall.html', {'queryset': allfromlabel, 'title': label})

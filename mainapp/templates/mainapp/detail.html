@@ -19,7 +19,7 @@
 
 <div class="maintitlediv">
 
-<div class="recordtitle"> 
+<div class="mainrecordtitle"> 
 {{record.artist.name}}
 <br>
 {{record.title}}
@@ -38,9 +38,48 @@
 <form action="{% url "cart:cart_add" record.id %}" method="POST">
 {% csrf_token %}
 <div class="addtocart">
-<input type="submit" value="add to cart" class="btnadd" > </input>
+<input type="submit" value="add to cart" class="btnadd" data-add="{% url "cart:cart_add" record.id %}" data-remove="{% url "cart:cart_remove" record.id %}" > </input>
 </div>
 </form>
+<script>
+$(document).ready(function(){
+$('.btnadd').click(function() {
+
+
+   if  ($('.btnadd').val() == 'add to cart') {
+    $('.btnadd').val('remove from cart'); 
+    {% comment %} $('.btnadd').attr("data-remove"); {% endcomment %}
+
+
+   }
+   
+   else {
+       $('.btnadd').val('add to cart'); 
+       {% comment %} $('.btnadd').attr("data-add"); {% endcomment %}
+   
+   } 
+
+
+
+});
+});
+
+{% comment %} function add_to_cart() {
+    $('.btnadd').val('remove from cart');
+
+}
+
+function remove_from_cart() {
+    $('.btnadd').val('add to cart');
+
+}  {% endcomment %}
+
+
+
+
+
+</script>
+
 
 
 <div class="basicinfodiv"> 
@@ -157,7 +196,7 @@ More from artist:
     <div class="recordartist"> 
     {{record.artist.name}}
     </div>
-    <div class="recordtitle1">
+    <div class="recordtitle">
     {{record.title}}
 
 
@@ -190,9 +229,12 @@ More from artist:
 
 {% if products_from_artist.count > products_from_artist1.count %} 
 
+
+<a href="{% url "mainapp:allfromartist" %}">
 <div class="seemore">
-See all
+see all
 </div>
+</a>
 
 </div>
 
@@ -266,9 +308,12 @@ More from label:
 
 {% if products_from_label.count > products_from_label1.count %} 
 
+
+<a href="{% url "mainapp:allfromlabel" %}">
 <div class="seemore">
-See all
+see all
 </div>
+</a>
 
 </div>
 

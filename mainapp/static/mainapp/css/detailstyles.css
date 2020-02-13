@@ -1,23 +1,22 @@
 .contentdiv {
     margin-left:0px;
     margin-right:0px;
-    height:270px;
-    padding-top:50px;
-    background-image:url("../images/free4.jpg");
-    /* background-color:white; */
+    height:16.875rem;
+    padding-top:3.125rem;
+    background-image:url("../images/upperbackground.jpg");
     background-size:cover;
-    padding-left:0px;
+
 }
 
 
 
 
 .vinylrecord {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-top:30px;
-    margin-left:90px;
+    margin-top:1.875rem;
+    margin-left:5.625rem;
     z-index:5;
     
     
@@ -27,14 +26,13 @@
 
 
 .vinylcover {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-left:90px;
-    margin-top:80px;
-    border: 2px solid black;
-    border-width: 3px;
-    z-index:2;
+    margin-left:5.625rem;
+    margin-top:5rem;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index:6;
 
@@ -42,20 +40,19 @@
 
 .maintitlediv {
     position: absolute;
-    width:300px;
-    height:250px;
+    width:18.75rem;
+    height:15.625rem;
     background-color:black;
-    border: 2px solid black;
-    border-width: 2px;
-    margin-left:0px;
-    margin-top:80px;
-    width:780px;
-    font-size:25px;
+    margin-left:0;
+    margin-right:0;
+    margin-top:5rem;
+    width:48.75rem;
     color:white;
     padding-left:500px;
     font-family: 'Source Code Pro', monospace;
     font-weight: 400;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size:1.5em;
     
     
 
@@ -64,13 +61,13 @@
 }
 
 
-.recordtitle {
-    font-size:35px;
-    margin-top:20px;
+.mainrecordtitle {
+    font-size:2.5rem;
+    margin-top:1.25rem;
     font-weight:600;
     font-family: 'Source Code Pro', monospace;
-    background: black;
     text-shadow: 2px 1px 0 #7A7A7A;
+
     	
     
 
@@ -87,18 +84,15 @@
 
 .moreinfodiv {
     position:relative;
-    margin-left:0px;
-    padding-left:0px;
-    width:1100px;
-    height:500px;
-    padding-left:90px;
-    padding-right:90px;
-    padding-top:20px;
-    margin-right:20px;
-    /* background-image: url("../images/free\ \ copy.jpg"); */
-    /* background-color:rgb(135, 163, 153); */
+    margin-left:0;
+    padding-left:0;
+    width:68.75rem;
+    height:31.25rem;
+    padding-left:5.625rem;
+    padding-right:5.625rem;
+    padding-top:1.25rem;
+    margin-right:1.25rem;
     background-color:rgb(212, 212, 212);
-    /* background-color:white; */
     background-size:cover;
     z-index:2;
     
@@ -110,35 +104,28 @@
 .addtocart {
     position:absolute;
     background-color:white;
-    margin-left: 0px;
-    width:200px;
-    height:50px;
-    margin-top:300px;
-    border: 2px solid black;
-    border-width: 3px;
-    font-family: 'Source Code Pro', monospace;
-    /* font-family: 'Comfortaa', cursive; */
-    font-weight: 700;
-    font-size:20px;
-    /* padding-top:10px;
-    padding-bottom:10px;
-    padding-left:40px; */
+    margin-left: 0;
+    width:12.5rem;
+    height:3.125rem;
+    margin-top:18.75rem;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
     box-shadow: 5px 5px black;
     z-index:3;
-    /* background-color: rgb(194, 194, 194); */
+    text-align:center;
+
 
 }
 
 
 .btnadd {
-    height:50px;
-    width:170px;
+    height:3.125rem;
+    width:12.5rem;
     background-color:white;
     outline:none;
     border:none;
     font-family: 'Source Code Pro', monospace;
-    font-size:15px;
-    font-weight:700px;
+    font-size:0.9375rem;
     z-index:4;
 
 
@@ -146,7 +133,7 @@
 
 .basicinfotitle {
     font-family: 'Source Code Pro', monospace;
-    font-size:25px;
+    font-size:1.5625rem;
     font-weight: 600;
 }
 
@@ -154,10 +141,10 @@
 .basicinfodiv {
     position:absolute;
 
-    height:350px;
-    width:375px;
-    margin-top:100px;
-    font-size:20px;
+    height:21.875rem;
+    width:23.4375rem;
+    margin-top:6.25rem;
+    font-size:1.25rem;
     font-family: 'Comfortaa';
 
 }
@@ -165,7 +152,7 @@
 
 .detailinfotitle {
     font-family: 'Source Code Pro', monospace;
-    font-size:25px;
+    font-size:1.5625rem;
     font-weight: 600;
 
 }
@@ -173,10 +160,10 @@
 
 .detailinfodiv {
 
-    width:700px;
-    margin-left:400px;
-    margin-top:100px;
-    font-size:25px;
+    width:43.75rem;
+    margin-left:25rem;
+    margin-top:6.25rem;
+    font-size:1.5625rem;
     font-family: 'Comfortaa';
 
  
@@ -189,18 +176,18 @@
     background-color:black;
     margin-left:0px;
     margin-right:0px;
-    height:400px;
+    height:25rem;
 
 }
 
 
 .frame {
-    margin-left:90px;
-    margin-top:40px;
-    border: 2px solid white;
-    border-width: 3px;
-    width:470px;
-    height:315px;
+    margin-left:5.625rem;
+    margin-top:2.5rem;
+    border: 0.125rem solid white;
+    border-width: 0.1875rem;
+    width:29.375rem;
+    height:19.6875rem;
     position:absolute;
 
 
@@ -214,7 +201,7 @@
     margin-left:0px;
     margin-right:0px;
     margin-top:0px;
-    height:400px;
+    height:25rem;
     background-color:white;
     position:relative;
 }
@@ -223,11 +210,11 @@
 
 .detaildescription {
     position:absolute;
-    margin-left:90px;
-    margin-top:30px;
-    width:1100px;
-    height:500px;
-    font-size:20px;
+    margin-left:5.625rem;
+    margin-top:1.875rem;
+    width:68.75rem;
+    height:31.25rem;
+    font-size:1.25rem;
     font-family: 'Comfortaa';
 
 
@@ -236,7 +223,7 @@
 
 .detailtitle {
     font-family: 'Source Code Pro', monospace;
-    font-size:25px;
+    font-size:1.5625rem;
     font-weight: 600;
 
 }
@@ -254,33 +241,36 @@
 .morefromartisttitle {
     margin-left:0px;
     margin-right:0px;
-    height:60px;
+    height:2.5rem;
     background-color:black;
     color:white;
     font-family: 'Source Code Pro', monospace;
-    font-size:25px;
+    font-size:1.5625rem;
     font-weight: 600;
-    padding-left:450px;
-    padding-top:20px;
+    padding-left:28.125rem;
+    padding-bottom:0.3125rem;
+    padding-top:1.25rem;
+
 }
 
 
 .morefromartistdiv {
-    margin-left:0px;
-    margin-right:0px;
-    height:auto;
-    background-image:url("../images/fat.jpg");
-    background-size:cover;
     position: relative;
-    padding-top:30px;
-    padding-bottom:150px;
+    background-image: url("../images/fat.jpg");
+    background-size:cover;
+    margin-left:0%;
+    margin-right:0%;
+    height:auto;
+    width:100%;
+    padding-bottom:8.125rem;
+    padding-top:3.125rem;
 
 }
 
 .innerrecordsdiv {
     position:relative;
-    height:300px;
-    width:1000px;
+    height:18.75rem;
+    width:62.5rem;
  
 
 }
@@ -300,15 +290,12 @@
 
 
 
-
-
-
 .vinyl {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-top:20px;
-    margin-left:90px;
+    margin-top:1.25rem;
+    margin-left:5.625rem;
     z-index: 4;
     
     
@@ -318,13 +305,13 @@
 
 
 .cover {
-    width:200px;
-    height:200px;
+    width:12.5rem;
+    height:12.5rem;
     position:absolute;
-    margin-left:90px;
-    margin-top:80px;
-    border: 2px solid black;
-    border-width: 3px;
+    margin-left:5.625rem;
+    margin-top:5rem;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
     z-index: 5;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -333,18 +320,19 @@
 
 .titlediv {
     position: absolute;
-    width:800px;
-    height:190px;
+    width:50rem;
+    height:11.875rem;
     background-color:white;
-    border: 2px solid black;
-    border-width: 3px;
-    margin-left:120px;
-    margin-top:70px;
-    font-size:35px;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
+    margin-left:7.5rem;
+    margin-top:4.375rem;
+    font-size:1.5625rem;
     font-family: 'Source Code Pro', monospace;
     z-index: 3;
-    padding-left:250px;
-    padding-top:10px;
+    padding-left:15.625rem;
+    padding-top:0.625rem;
+    margin-bottom:3.125rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
@@ -357,8 +345,8 @@
 }
 
 
-.recordtitle1 {
-    font-size:30px;
+.recordtitle {
+    font-size:1.5625rem;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
     font-weight: 600;
    
@@ -368,82 +356,89 @@
 
 
 .recordlabeletc {
-    margin-top:20px;
-    font-size:20px;
+    margin-top:1.25rem;
+    font-size:1.25rem;
     font-family: 'Source Code Pro', monospace;
+    position:absolute;
 
 }
 
 .morefromlabeltitle {
     margin-left:0px;
     margin-right:0px;
-    height:60px;
+    height:2.5rem;
     background-color:black;
     color:white;
     font-family: 'Source Code Pro', monospace;
-    font-size:25px;
+    font-size:1.5625rem;
     font-weight: 600;
-    padding-left:450px;
-    padding-top:20px;
+    padding-left:28.125rem;
+    padding-bottom:0.3125rem;
+    padding-top:1.25rem;
 
 }
 
 
 
 .morefromlabeldiv {
-    margin-left:0px;
-    margin-right:0px;
-    height:auto;
-    background-image:url("../images/fat.jpg");
+    position: relative;
+    background-image: url("../images/fat.jpg");
     background-size:cover;
-    position: relative;
-    padding-top:30px;
-    padding-bottom:150px;
+    margin-left:0%;
+    margin-right:0%;
+    height:auto;
+    width:100%;
+    padding-bottom:8.125rem;
+    padding-top:3.125rem;
 
 }
 
 
-.seeallfromlabel {
-    margin-left:0px;
-    margin-right:0px;
-    height:40px;
-    background-color:white;
-    color:black;
-    font-family: 'Source Code Pro', monospace;
-    font-size:25px;
-    font-weight: 600;
-    padding-left:0px;
-    padding-bottom:30px;
-    padding-top:0px;
-    position: relative;
-
-
-}
 
 
 .seemore {
     position:absolute;
     background-color:rgb(212, 212, 212);
     color:black;
-    margin-left: 500px;
-    width:150px;
-    height:30px;
-    margin-top:40px;
-    margin-bottom:200px;
-    border: 2px solid black;
-    border-width: 3px;
+    margin-left: 31.25rem;
+    width:12.5rem;
+    height:2.125rem;
+    margin-top:2.5rem;
+    margin-bottom:12.5rem;
     font-family: 'Source Code Pro', monospace;
-    /* font-family: 'Comfortaa', cursive; */
-    font-weight: 700;
-    font-size:20px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:40px;
+    font-size:0.9375rem;
+    border: 0.125rem solid black;
+    border-width: 0.1875rem;
     box-shadow: 5px 5px black;
+    z-index:3;
+    text-align:center;
+    padding-top:0.75rem;
+
+
 
 }
 
+.seemoretitle {
+    width:100%;
+    height:4.375rem;
+    margin-top:0;
+    background-color:white;
+    color:black;
+    /* padding-left:5.625rem; */
+    font-family: 'Source Code Pro', monospace;
+    font-size:1.875rem;
+    text-align: center;
+    padding-top:1.25rem;
+}
 
+.seemorebackground {
+    height:auto;
+    width:100%;
+    background-color:grey;
+    position: absolute;
+    padding-bottom:6.25rem;
+
+}
 
 
 

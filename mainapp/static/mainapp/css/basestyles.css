@@ -15,12 +15,12 @@ body {
 
 
 .header {
-    padding-left:0%;
-    padding-right:0%;
-    margin-left:0%;
-    margin-right:0%;
+    padding-left:0;
+    padding-right:0;
+    margin-left:0;
+    margin-right:0;
     width:100%;
-    height:50px;
+    height:3.125rem;
     background-color: black;
 
 }
@@ -29,21 +29,22 @@ body {
 
     position: absolute;
     background-size:cover;
-    margin-left:10px;
-    height:40px;
-    width:120px;
-    margin-top:10px;
+    margin-left:0.625rem;
+    height:2.5rem;
+    width:7.5rem;
+    margin-top:0.625rem;
 
 }
 
 
 
 .cart {
-    height:30px;
-    width:35px;
+    height:1.875rem;
+    width:2.1875rem;
     position:absolute;
-    margin-top:13px;
+    margin-top:0.8125rem;
     margin-left:95%;
+
 
 }
 
@@ -52,10 +53,10 @@ body {
 
 
 .search {
-    height:19px;
-    width:18px;
+    height:1.1875rem;
+    width:1.125rem;
     position:absolute;
-    margin-top:19px;
+    margin-top:1.1875rem;
     margin-left:93%;
 
 }
@@ -85,12 +86,11 @@ body {
 
 
 .footer {
-    height:120px;
+    height:7.5rem;
     width: 100%;
     margin-bottom:0px;
     background-color:black;
-    /* border-top: 2px solid white;
-    border-width: 3px; */
+
 
 }
 
@@ -102,5 +102,5 @@ body {
     position:absolute;
     margin-left:0px;
     margin-top:0px;
-    padding-bottom:40px;
+    padding-bottom:2.5rem;
 }
